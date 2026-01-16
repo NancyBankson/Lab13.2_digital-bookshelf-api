@@ -2,7 +2,7 @@ const Book = require("../models/Book");
 
 async function getAllBooks(req, res) {
     try {
-        const foundBooks = await Book.findById({});
+        const foundBooks = await Book.find({});
         if (foundBooks) {
             res.json(foundBooks);
         } else {
